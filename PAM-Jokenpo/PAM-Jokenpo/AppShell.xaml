@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="PAM_Jokenpo.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:PAM_Jokenpo"
+    xmlns:views="clr-namespace:PAM_Jokenpo.Views"
+    Shell.FlyoutBehavior="Disabled"
+    Title="PAM_Jokenpo">
+
+    <ShellContent
+        Title="Jokenpo"
+        ContentTemplate="{DataTemplate views:GameView}"
+        Route="Jokenpo"></ShellContent>
+
+</Shell>

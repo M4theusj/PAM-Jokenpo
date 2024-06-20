@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PAM_Jokenpo.Views.GameView"
+             xmlns:local="clr-namespace:PAM_Jokenpo.ViewModels"
+             Title="GameView">
+    <ContentPage.BindingContext>
+        <local:GameViewModel />
+    </ContentPage.BindingContext>
+
+    <VerticalStackLayout Padding="30,0" Spacing="25">
+        <Label Text="Jokenpo" FontSize="24" HorizontalOptions="Center" />
+
+        <Picker Title="Escolha uma opção" 
+            ItemsSource="{Binding Options}" 
+            SelectedItem="{Binding UserChoice}" />
+
+        <Button Text="Jogar" Command="{Binding PlayCommand}" />
+
+        <Label Text="{Binding ResultMessage}" FontSize="18" TextColor="Red" HorizontalOptions="Center" />
+
+        <Label Text="{Binding OpponentChoice}" FontSize="18" HorizontalOptions="Center" />
+
+        <Label Text="{Binding VictoriesText}" FontSize="18" HorizontalOptions="Center" />
+        <Label Text="{Binding DefeatsText}" FontSize="18" HorizontalOptions="Center" />
+
+    </VerticalStackLayout>
+</ContentPage>
