@@ -1,0 +1,23 @@
+1 = E um padrão de organização de código que separa a lógica da interface e serve para facilitar mudanças posteriores no código
+
+2= O MVVM Tool kit e um pacote responsável por fornecer as ferramentas necessárias para colocar o seu código no padrão MVVM
+
+3 = O appshell serve e a estrutura de exibição do aplicativo. Para uma vida ser exibida no lugar da main pagar, você deve estruturar o shellcontent principal para o local dela, antes definindo no topo do appshell o caminho correto para sua view
+
+4= a tab bar serve pra criar uma interface de navegação baseada em abas, que permite ao usuário alternar entre diferentes seçoes do app
+
+5= primeiro você deve apertar com o botão direito na solução selecionar a opção manager nuget packages ir para aba browse e pesquisar o nome do pacote
+
+6= O binding e um objeto que fica na view e viewmodel que quando alterado um o outro se altera
+
+7= o command é um mecanismo que permite associar ações a elementos de interface do usuário, como botões e outros controles interativos que faz parte do mvvm.
+
+8= binding contexto e o contexto usado para resolverbindings em uma view. Associamos o binding context a uma classe via model 
+
+9= a view modelo serve para manipular a interface, colocando informações da model na view.
+
+10= dentro do mvvm você tem que definir o caminho da view para ela ser exibida 
+
+11= significa que qualquer alteração na variável será notificada a view, isso permite a atualização automática da interface de usuário 
+
+12 = certifique-se de implementar INotifyPropertyChanged e chamar OnPropertyChanged no setter para atualizar a UI corretamente.
